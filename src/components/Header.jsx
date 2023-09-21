@@ -9,8 +9,10 @@ import {
 export default function Header() {
   return (
     <>
-      <div className=" bg-purple-500 text-white sm:flex sm:justify-between text-center p-3">
-        <div>
+     <header className="">
+     <div className=" bg-primary">
+        <div className="container  text-white sm:flex sm:justify-between text-center py-3">
+          <div>
           <span >
             <AiOutlineMail className="inline" />
             123@gmail.com{" "}
@@ -18,9 +20,9 @@ export default function Header() {
           <span>
             <BsFillTelephoneFill className="inline" /> (1234)6789
           </span>
-        </div>
+          </div>
         <div className="flex gap-4">
-          <select name="lang" id="lang" className=" bg-transparent capitalize">
+          <select name="lang" id="lang" className=" bg-primary capitalize">
             <option value="eng">English</option>
             <option value="nep">Nepali</option>
             <option value="jap">japanese</option>
@@ -50,6 +52,7 @@ export default function Header() {
           </span>
         </div>
       </div>
+            </div>
 
       <div className="py-5 flex flex-col sm:flex-row  justify-between text-primary	 capitalize  items-center  ">
         <div className="flex flex-col sm:flex-row gap-2 justify-between sm:gap-8 items-center">
@@ -84,6 +87,7 @@ export default function Header() {
           </button>
         </form>
       </div>
+     </header>
     </>
   );
 }
