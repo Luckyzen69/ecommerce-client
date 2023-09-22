@@ -2,7 +2,7 @@ import BannerImage from "../assets/banner-1.png"
 import React from "react"
 export default function Banner(){
     return <>
-     <div className="h-[60vh] bg-cover bg-no-repeat bg-center flex items-center" style={{
+     <div className="h-[100vh] bg-cover bg-no-repeat bg-center flex items-center" style={{
         backgroundImage: `url(${BannerImage})`
       }}>
       <div className="container mt-20" >
